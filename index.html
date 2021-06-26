@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <title>Expense Tracker</title>
+  <style>
+    .error {
+      background: red;
+    }
+
+    .success {
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Add Expense</h1>
+    <form id="info">
+      <div>
+        <label for="expense">Expense</label>
+        <input type="text" id="expense" class="u-full-width">
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input type="text" id="date" class="u-full-width">
+      </div>
+      <div>
+        <label for="amount">Amount/Cost</label>
+        <input type="text" id="amount" class="u-full-width">
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="u-full-width">
+      </div>
+    </form>
+
+    <hr>
+
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Expense</th>
+          <th>Date</th>
+          <th>Amount/Cost</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="expense-list"></tbody>
+    </table>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
